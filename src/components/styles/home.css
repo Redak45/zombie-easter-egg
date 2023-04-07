@@ -1,0 +1,76 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: #242424;
+}
+
+.Container{
+    margin-bottom: 100px;
+}
+
+h1{
+    color: #C59535;
+  
+    font-family: 'Zombie';
+    padding: 10px;
+}
+
+h2{
+    color:#C59535;
+    text-decoration: none;
+}
+
+.Card {
+    color: #C59535;
+    font-family: 'Zombie';  
+    text-align: center;
+    margin: 30px 30px; 
+}
+
+.Card a{
+    color: transparent;
+}
+
+.CardList1{
+    background-image: url("../../../public/assets/Tranzit.png"); 
+    background-size: cover; 
+    padding: 30px; 
+    margin-bottom: 40px;
+    border:  solid  3px #C59535;
+    text-decoration: none;                                           
+}
+
+.CardList2{
+    background-image: url("../../../public/assets/DieRise.png"); 
+    background-size: cover; 
+    padding: 30px; 
+    margin-bottom: 40px; 
+    border:  solid  3px #C59535;                                              
+}
+
+.CardList3{
+    background-image: url("../../../public/assets/MobOfTheDead.png");  
+    background-size: cover; 
+    padding: 30px;
+    margin-bottom: 40px;
+    border:  solid  3px #C59535;                                                   
+}
+
+.CardList4{
+    background-image: url("../../../public/assets/Buried.png");  
+    background-size: cover; 
+    padding: 30px;
+    margin-bottom: 40px; 
+    border:  solid  3px #C59535;                                                
+}
+
+.CardList5{
+    background-image: url("../../../public/assets/Origins.jpeg");
+    background-size: cover;   
+    padding: 30px;
+    margin-bottom: 40px; 
+    border:  solid  3px #C59535;                                                
+}

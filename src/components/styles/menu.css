@@ -1,0 +1,107 @@
+.banner{
+    background-image: url("../../../public/assets/Tranzit.png"); 
+    background-size: cover; 
+    padding: 30px;
+    margin-top: 20px; 
+    border:  solid  3px #C59535;  
+    color: #C59535;
+    font-family: 'Zombie';                                            
+}
+
+
+.bannerDierise{
+    background-image: url("../../../public/assets/DieRise.png"); 
+    background-size: cover; 
+    padding: 30px;
+    margin-top: 20px; 
+    border:  solid  3px #C59535; 
+    color: #C59535;
+    font-family: 'Zombie';                                         
+}
+
+.bannerMobofthedead{
+    background-image: url("../../../public/assets/MobOfTheDead.png"); 
+    background-size: cover; 
+    padding: 30px;
+    margin-top: 20px; 
+    border:  solid  3px #C59535;   
+    color: #C59535;
+    font-family: 'Zombie';                                        
+}
+
+.bannerBuried{
+    background-image: url("../../../public/assets/Buried.png"); 
+    background-size: cover; 
+    padding: 30px;
+    margin-top: 20px; 
+    border:  solid  3px #C59535;  
+    color: #C59535;
+    font-family: 'Zombie';                                         
+}
+
+.bannerOrigins{
+    background-image: url("../../../public/assets/Origins.jpeg"); 
+    background-size: cover; 
+    padding: 30px;
+    margin-top: 20px; 
+    border:  solid  3px #C59535; 
+    color: #C59535;
+    font-family: 'Zombie';                                          
+}
+
+.Menu{
+    color: #C59535;
+    text-align: center;
+    margin: 40px 30px;
+    border : solid 2px #C59535;
+    padding: 15px;
+    background-color: #4A4A4A;
+    position: relative;
+}
+
+.Menu a{
+    color: transparent;
+}
+
+.Menu h2{
+    text-align: left; 
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.Menu:after{
+    content:"";
+    position: absolute;
+    border-bottom: 2px solid #C59535;;
+    width: 94%;
+    margin-top: 37px;
+    display: block;
+}
+
+.Menu:first-child{
+    margin-top: 0px !important;
+}
+
+.Menu:last-child:after{
+    display: none;
+}
+
+.Menu img{
+    float: left;
+}
+
+#arrow{
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+
+@media (min-width: 700px) { 
+
+    html{
+      
+    }
+
+ 
+ }

@@ -1,0 +1,264 @@
+{
+    "tranzit": [
+        {
+            "maps": "Tranzit",
+            "url": "./assets/Tranzit.png",
+            "trophy": [
+                {
+                    "name": "La tour de Babel",
+                    "condition": "Finir le secret de la map",
+                    "type": "or"
+                  },
+                  {
+                    "name": "Ne tirez pas avant de voir",
+                    "condition": "Ouvrir toutes les portes de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "La lueur dans leur yeux",
+                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "La bus party",
+                    "condition": "Équiper tous les ajouts possibles sur le bus",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Dansez sur ma tombe",
+                    "condition": "Récupérer votre pierre tombale",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "L'équipement fourni peut varier",
+                    "condition": "Construire les 4 objest de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Tu n'as aucun pouvoir sur moi",
+                    "condition": "Tuez-le sans qu'il vous attaque.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Ils n'existent pas",
+                    "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Économique",
+                    "condition": "Utilisez un moyen de transport alternatif.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Happy hour",
+                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                    "type": "bronze"
+                }    
+            ],
+            "record1": [
+                {
+                    "id": 1,
+                    "name": "Ali",
+                    "time": "10:45"
+                },
+                {
+                    "id": 2,
+                    "name": "Pierre",
+                    "time": "12:45"
+                },
+                {
+                    "id": 3,
+                    "name": "Thomas",
+                    "time": "13:48"
+                },
+                {
+                    "id": 4,
+                    "name": "Juba",
+                    "time": "14:35"
+                },
+                {
+                    "id": 5,
+                    "name": "Mathis",
+                    "time": "14:51"
+                },
+                {
+                    "id": 6,
+                    "name": "Thierry",
+                    "time": "14:56"
+                },
+                {
+                    "id": 7,
+                    "name": "Franck",
+                    "time": "15:03"
+                }        
+            ]
+        }],
+    "dierise": [
+        {
+            "maps": "Die Rise",
+            "url": "./assets/DieRise.png",
+            "record2": [
+                {
+                    "id": 1,
+                    "name": "test",
+                    "time": "10:45"
+                },
+                {
+                    "id": 2,
+                    "name": "test",
+                    "time": "12:45"
+                },
+                {
+                    "id": 3,
+                    "name": "test",
+                    "time": "13:48"
+                },
+                {
+                    "id": 4,
+                    "name": "Juba",
+                    "time": "14:35"
+                },
+                {
+                    "id": 5,
+                    "name": "Mathis",
+                    "time": "14:51"
+                },
+                {
+                    "id": 6,
+                    "name": "Thierry",
+                    "time": "14:56"
+                },
+                {
+                    "id": 7,
+                    "name": "Franck",
+                    "time": "15:03"
+                }
+            ]
+        }],
+    "mobofthedead": [
+        {
+            "maps": "Mob Of the dead",
+            "url": "./assets/Mobofthedead.png",
+            "record3": [
+                {
+                    "id": 1,
+                    "name": "test",
+                    "time": "10:45"
+                },
+                {
+                    "id": 2,
+                    "name": "Pierre",
+                    "time": "12:45"
+                },
+                {
+                    "id": 3,
+                    "name": "Thomas",
+                    "time": "13:48"
+                },
+                {
+                    "id": 4,
+                    "name": "Juba",
+                    "time": "14:35"
+                },
+                {
+                    "id": 5,
+                    "name": "Mathis",
+                    "time": "14:51"
+                },
+                {
+                    "id": 6,
+                    "name": "Thierry",
+                    "time": "14:56"
+                },
+                {
+                    "id": 7,
+                    "name": "Franck",
+                    "time": "15:03"
+                }
+            ]
+        }],
+    "buried": [
+    {
+        "maps": "Bureid",
+        "url": "./assets/Buried.png",
+        "record4": [
+            {
+                "id": 1,
+                "name": "test",
+                "time": "10:45"
+            },
+            {
+                "id": 2,
+                "name": "Pierre",
+                "time": "12:45"
+            },
+            {
+                "id": 3,
+                "name": "Thomas",
+                "time": "13:48"
+            },
+            {
+                "id": 4,
+                "name": "Juba",
+                "time": "14:35"
+            },
+            {
+                "id": 5,
+                "name": "Mathis",
+                "time": "14:51"
+            },
+            {
+                "id": 6,
+                "name": "Thierry",
+                "time": "14:56"
+            },
+            {
+                "id": 7,
+                "name": "Franck",
+                "time": "15:03"
+            }
+        ]
+    }],
+    "origins": [
+        {
+            "maps": "Origins",
+            "url": "./assets/Origins.jpeg",
+            "record3": [
+                {
+                    "id": 1,
+                    "name": "test",
+                    "time": "10:45"
+                },
+                {
+                    "id": 2,
+                    "name": "Pierre",
+                    "time": "12:45"
+                },
+                {
+                    "id": 3,
+                    "name": "Thomas",
+                    "time": "13:48"
+                },
+                {
+                    "id": 4,
+                    "name": "Juba",
+                    "time": "14:35"
+                },
+                {
+                    "id": 5,
+                    "name": "Mathis",
+                    "time": "14:51"
+                },
+                {
+                    "id": 6,
+                    "name": "Thierry",
+                    "time": "14:56"
+                },
+                {
+                    "id": 7,
+                    "name": "Franck",
+                    "time": "15:03"
+                }
+            ]
+        }]
+}

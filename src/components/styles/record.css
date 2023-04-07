@@ -1,0 +1,100 @@
+.ContainerRecord{
+    padding-bottom: 50px;
+}
+
+.timerButton{
+    text-align: center;
+}
+
+.timer{
+ 
+    border: solid 2px #ffffff;
+    padding: 10px; 
+    width: 170px;
+    margin: auto;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timerButton1{
+    padding: 10px;
+    background-color: #980808;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.timerButton2{
+    padding: 10px;
+    background-color: #C59535;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.record{
+    margin: 20px 20px;
+    border : solid 4px #C59535;
+    padding: 15px;
+    background-color: #4A4A4A;
+    border-radius: 10px;                                   
+}
+
+.recordtitle ul{    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.recordtitle ul li{ 
+    padding: 15px;
+    font-family: 'Zombie';
+    font-weight: bolder; 
+    color: #ffffff; 
+    display: flex;
+    flex-direction: row;                          
+}
+
+.recordplayer li{
+    list-style-type: none; 
+    border-radius:10px;
+    margin-top: 20px;
+    font-family: 'Zombie';
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.recordplayer li:nth-child(1){
+    background-color: rgba(197, 149, 53);
+}
+
+.recordplayer li:nth-child(2){
+    background-color: rgba(197, 149, 53, 0.7);
+}
+
+.recordplayer li:nth-child(3){
+    background-color: rgba(197, 149, 53, 0.4);
+}
+
+.recordplayer li:nth-child(4), .record li:nth-child(5), .record li:nth-child(6), .record li:nth-child(7){
+    background-color: rgba(197, 149, 53, 0.2);
+}
+
+.recordplayer li span{
+    color: #ffffff;
+    font-family: 'Quicksand';
+    margin: 10px 10px;
+}
