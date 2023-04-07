@@ -27,7 +27,7 @@ return (
     </div>
 
     <div className="trophydescription">
-      <p> Vous trouverez ci-dessous l’intégralité des trophées de <span> TRANZIT </span>classés du plus important au moins important. </p> 
+      <p> Vous trouverez ci-dessous l’intégralité des trophées de <span> TRANZIT </span> classé par types de trophées </p> 
     </div>
 
     <div className="filterbuttons">

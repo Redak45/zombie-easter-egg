@@ -4,9 +4,7 @@ import React, { useState, useEffect } from 'react';
 const Timer = () => {
 
     const [timeElapsed, setTimeElapsed] = useState({ minutes: 0, seconds: 0 });
-    const [timerActive, setTimerActive] = useState(false);
-    
-  
+    const [timerActive, setTimerActive] = useState(false);  
     useEffect(() => {
       if (timerActive) {
         const interval = setInterval(() => {
@@ -39,12 +37,15 @@ const Timer = () => {
     return (
       
         <div className="timerButton">
+
+        <button className="timerButton2" onClick={handleResetTimer}> Réinitialiser</button>
+        
         {!timerActive ? (
-            <button className="timerButton1" onClick={handleStartTimer}> Chronometrer</button>
+            <button className="timerButton1" onClick={handleStartTimer}> Démarrer</button>
         ) : (
             <button className="timerButton1" onClick={handleStopTimer}> Stop</button>
         )}
-        <button className="timerButton2" onClick={handleResetTimer}> Réinitialiser</button>
+        
         
 
         {timerActive && (
@@ -53,10 +54,11 @@ const Timer = () => {
             </div>
         )}
 
-        {!timerActive && timeElapsed > 0 && (
-            <div className="timer">
-            Temps total : {timeElapsed}s
-            </div>
+        {!timerActive && (timeElapsed.minutes > 0 || timeElapsed.seconds > 0) && (
+          <div className="timer">
+            Votre temps est de {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes}:
+             {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
+           </div>
         )}       
             
         </div>
