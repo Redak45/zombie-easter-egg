@@ -58,38 +58,38 @@
             "record": [
                 {
                     "id": 1,
-                    "name": "Ali",
-                    "time": "10:45"
+                    "name": "Shadez",
+                    "time": "11:51"
                 },
                 {
                     "id": 2,
-                    "name": "Pierre",
-                    "time": "12:45"
+                    "name": "Zo Raptr",
+                    "time": "12:36"
                 },
                 {
                     "id": 3,
-                    "name": "Thomas",
-                    "time": "13:48"
+                    "name": "Frothy Milkshake",
+                    "time": "13:58"
                 },
                 {
                     "id": 4,
-                    "name": "Juba",
-                    "time": "14:35"
+                    "name": "sable",
+                    "time": "14:13"
                 },
                 {
                     "id": 5,
-                    "name": "Mathis",
-                    "time": "14:51"
+                    "name": "J Dubs",
+                    "time": "15:18"
                 },
                 {
                     "id": 6,
-                    "name": "Thierry",
-                    "time": "14:56"
+                    "name": "Hatcher",
+                    "time": "15:34"
                 },
                 {
                     "id": 7,
-                    "name": "Franck",
-                    "time": "15:03"
+                    "name": "Huth",
+                    "time": "15:38"
                 }        
             ]
         }],
@@ -152,38 +152,28 @@
             "record": [
                 {
                     "id": 1,
-                    "name": "test",
-                    "time": "10:45"
+                    "name": "Excosis",
+                    "time": "5:47"
                 },
                 {
                     "id": 2,
-                    "name": "test",
-                    "time": "12:45"
+                    "name": "Itz Nukez",
+                    "time": "6:18"
                 },
                 {
                     "id": 3,
-                    "name": "test",
-                    "time": "13:48"
+                    "name": "Ultimate Zenith",
+                    "time": "6:26"
                 },
                 {
                     "id": 4,
-                    "name": "Juba",
-                    "time": "14:35"
+                    "name": "ApexDrajon2",
+                    "time": "6:56"
                 },
                 {
                     "id": 5,
-                    "name": "Mathis",
-                    "time": "14:51"
-                },
-                {
-                    "id": 6,
-                    "name": "Thierry",
-                    "time": "14:56"
-                },
-                {
-                    "id": 7,
-                    "name": "Franck",
-                    "time": "15:03"
+                    "name": "TrueHelp",
+                    "time": "7:04"
                 }
             ]
         }],
@@ -246,44 +236,44 @@
             "record": [
                 {
                     "id": 1,
-                    "name": "testssss",
-                    "time": "10:45"
+                    "name": "Shadez",
+                    "time": "18:25"
                 },
                 {
                     "id": 2,
-                    "name": "Pierre",
-                    "time": "12:45"
+                    "name": "Reality",
+                    "time": "18:38"
                 },
                 {
                     "id": 3,
-                    "name": "Thomas",
-                    "time": "13:48"
+                    "name": "sable",
+                    "time": "18:42"
                 },
                 {
                     "id": 4,
-                    "name": "Juba",
-                    "time": "14:35"
+                    "name": "Emrys",
+                    "time": "18:42"
                 },
                 {
                     "id": 5,
-                    "name": "Mathis",
-                    "time": "14:51"
+                    "name": "Dank Slushie",
+                    "time": "18:44"
                 },
                 {
                     "id": 6,
-                    "name": "Thierry",
-                    "time": "14:56"
+                    "name": "Zo Ratpr",
+                    "time": "18:48"
                 },
                 {
                     "id": 7,
-                    "name": "Franck",
-                    "time": "15:03"
+                    "name": "Freckleston",
+                    "time": "18:52"
                 }
             ]
         }],
     "buried": [
     {
-        "maps": "Bureid",
+        "maps": "Buried",
         "url": "./assets/Buried.png",
         "trophy": [
             {
@@ -340,38 +330,23 @@
         "record": [
             {
                 "id": 1,
-                "name": "test",
-                "time": "10:45"
+                "name": "Itz Nukez",
+                "time": "11:24"
             },
             {
                 "id": 2,
-                "name": "Pierre",
-                "time": "12:45"
+                "name": "TheMDof106",
+                "time": "11:47"
             },
             {
                 "id": 3,
-                "name": "Thomas",
-                "time": "13:48"
+                "name": "Ptare",
+                "time": "12:29"
             },
             {
                 "id": 4,
-                "name": "Juba",
-                "time": "14:35"
-            },
-            {
-                "id": 5,
-                "name": "Mathis",
-                "time": "14:51"
-            },
-            {
-                "id": 6,
-                "name": "Thierry",
-                "time": "14:56"
-            },
-            {
-                "id": 7,
-                "name": "Franck",
-                "time": "15:03"
+                "name": "Hacher",
+                "time": "12:38"
             }
         ]
     }],
@@ -434,13 +409,13 @@
             "record": [
                 {
                     "id": 1,
-                    "name": "test",
-                    "time": "10:45"
+                    "name": "Scottydogs007",
+                    "time": "37:42"
                 },
                 {
                     "id": 2,
-                    "name": "Pierre",
-                    "time": "12:45"
+                    "name": "Dank Slushie",
+                    "time": "39:49"
                 },
                 {
                     "id": 3,
@@ -449,23 +424,23 @@
                 },
                 {
                     "id": 4,
-                    "name": "Juba",
-                    "time": "14:35"
+                    "name": "Faronsson",
+                    "time": "41:42"
                 },
                 {
                     "id": 5,
-                    "name": "Mathis",
-                    "time": "14:51"
+                    "name": "Huth",
+                    "time": "41:50"
                 },
                 {
                     "id": 6,
-                    "name": "Thierry",
-                    "time": "14:56"
+                    "name": "SnowySticken",
+                    "time": "42:03"
                 },
                 {
                     "id": 7,
-                    "name": "Franck",
-                    "time": "15:03"
+                    "name": "De_averagegamer",
+                    "time": "42:14"
                 }
             ]
         }]
