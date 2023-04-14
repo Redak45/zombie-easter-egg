@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/record.css';
 import Timer from '../Timer';
+import iconYoutube from '../icons/youtube.png';
+import iconTwitch from '../icons/twitch.png';
 
 
-const TranzitRecord = ({records}) => {
+const Record = ({records}) => {
   
 
   return (
@@ -19,31 +21,40 @@ const TranzitRecord = ({records}) => {
       </div>
     
       <Timer /> 
-        
-      <div className="record">
-        <div className="recordtitle"> 
+
+        <div className="record">
+          <div className="recordtitle"> 
           <ul>
             <li>Rang</li>
             <li>Joueur</li>
             <li>Temps</li>
+            <li>Game</li>
           </ul>  
-        </div>
 
-        <div className="recordplayer">
           {records.map((record) => (
-            <li key={record.id}>
-              <span>{record.id}</span>
-              <span>{record.name}</span>
-              <span>{record.time}</span>
+         <div className="recordplayer" key={record.id}>
+         <li>
+            <span>{record.id}</span>
+            <span>{record.name}</span>
+            <span>{record.time}</span>
+          {record.link.includes('youtube') ? (
+            <a href={record.link}>
+          <img src={iconYoutube} alt="youtube" width="30" />
+            </a>
+            ) : (
+            <a href={record.link}>
+          <img src={iconTwitch} alt="twitch" width="27" />
+            </a>
+            )}
             </li>
+          </div>
           ))}
         </div> 
-
-       
+   
       </div>
     </div>
   ); 
 
 };
 
-export default TranzitRecord;
+export default Record;

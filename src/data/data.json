@@ -59,37 +59,44 @@
                 {
                     "id": 1,
                     "name": "Shadez",
-                    "time": "11:51"
+                    "time": "11:51",
+                    "link":"https://www.youtube.com/watch?v=ZuxBRMAXj58&ab_channel=Shadez"
                 },
                 {
                     "id": 2,
                     "name": "Zo Raptr",
-                    "time": "12:36"
+                    "time": "12:36",
+                    "link":"https://www.youtube.com/watch?v=l4tCwRpRXO4&ab_channel=ZoRaptr"
                 },
                 {
                     "id": 3,
-                    "name": "Frothy Milkshake",
-                    "time": "13:58"
+                    "name": "FrothyMilk",
+                    "time": "13:58",
+                    "link":"https://www.twitch.tv/videos/1786039736"
                 },
                 {
                     "id": 4,
                     "name": "sable",
-                    "time": "14:13"
+                    "time": "14:13",
+                    "link":"https://www.youtube.com/watch?v=sUk0LGPAdu8&ab_channel=sable"
                 },
                 {
                     "id": 5,
                     "name": "J Dubs",
-                    "time": "15:18"
+                    "time": "15:18",
+                    "link":"https://www.youtube.com/watch?v=fhBu1cFXWXE&ab_channel=JDubs"
                 },
                 {
                     "id": 6,
                     "name": "Hatcher",
-                    "time": "15:34"
+                    "time": "15:34",
+                    "link":"https://www.youtube.com/watch?v=rur4E2JB6KM&ab_channel=HelamanHatcher"
                 },
                 {
                     "id": 7,
                     "name": "Huth",
-                    "time": "15:38"
+                    "time": "15:38",
+                    "link":"https://www.youtube.com/watch?v=5P_1nit1p1U&ab_channel=Huth"
                 }        
             ]
         }],
@@ -99,81 +106,58 @@
             "url": "./assets/DieRise.png",
             "trophy": [
                 {
-                    "name": "La tour de Babel",
+                    "name": "Maintenance",
                     "condition": "Finir le secret de la map",
-                    "type": "or"
+                    "type": "or"        
                   },
                   {
-                    "name": "Ne tirez pas avant de voir",
-                    "condition": "Ouvrir toutes les portes de la carte",
+                    "name": "Vertidigitateur",
+                    "condition": "balancez 10 zombies en une partie.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Suivez le courant",
+                    "condition": "atteignez la 10e manche avant de mettre le courant.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Mis en boîte",
+                    "condition": "Utilisez Sacré punch et toutes les machines atouts en une partie.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Attention, mort glissant",
+                    "condition": "tuez 5 zombies d'un seul coup de Sliquificateur.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "La fureur du dragon",
+                    "condition": "C affrontez le dragon de front avant d'atteindre la 2e manche.",
                     "type": "argent"
                   },
                   {
-                    "name": "La lueur dans leur yeux",
-                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
-                    "type": "bronze"
-                  },
-                  {
-                    "name": "La bus party",
-                    "condition": "Équiper tous les ajouts possibles sur le bus",
-                    "type": "bronze"
-                  },
-                  {
-                    "name": "Dansez sur ma tombe",
-                    "condition": "Récupérer votre pierre tombale",
-                    "type": "bronze"
-                  },
-                  {
-                    "name": "L'équipement fourni peut varier",
-                    "condition": "Construire les 4 objest de la carte",
+                    "name": " Appelez-moi Dieu",
+                    "condition": "réanimez-vous.",
                     "type": "argent"
-                  },
-                  {
-                    "name": "Tu n'as aucun pouvoir sur moi",
-                    "condition": "Tuez-le sans qu'il vous attaque.",
-                    "type": "bronze"
                   },
                   {
                     "name": "Ils n'existent pas",
                     "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
                     "type": "argent"
-                  },
-                  {
-                    "name": "Économique",
-                    "condition": "Utilisez un moyen de transport alternatif.",
-                    "type": "bronze"
-                  },
-                  {
-                    "name": "Happy hour",
-                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
-                    "type": "bronze"
-                }    
+                  }
             ],
             "record": [
                 {
                     "id": 1,
                     "name": "Excosis",
-                    "time": "5:47"
+                    "time": "5:47",
+                    "link":"https://www.youtube.com/watch?v=ztvGmvSi9s4&ab_channel=Excosis" 
                 },
                 {
                     "id": 2,
                     "name": "Itz Nukez",
-                    "time": "6:18"
-                },
-                {
-                    "id": 3,
-                    "name": "Ultimate Zenith",
-                    "time": "6:26"
-                },
-                {
-                    "id": 4,
-                    "name": "ApexDrajon2",
-                    "time": "6:56"
-                },
-                {
-                    "id": 5,
-                    "name": "TrueHelp",
-                    "time": "7:04"
+                    "time": "6:18",
+                    "link":"https://www.youtube.com/watch?v=KtEkauBsiEg&ab_channel=ItIsNukez" 
                 }
             ]
         }],
@@ -237,37 +221,44 @@
                 {
                     "id": 1,
                     "name": "Shadez",
-                    "time": "18:25"
+                    "time": "18:25",
+                    "link":"https://www.youtube.com/watch?v=sfV3jrpTrbk&ab_channel=Shadez"
                 },
                 {
                     "id": 2,
                     "name": "Reality",
-                    "time": "18:38"
+                    "time": "18:38",
+                    "link":"https://www.youtube.com/watch?v=hoh1GAUpF1E&ab_channel=Reality"
                 },
                 {
                     "id": 3,
                     "name": "sable",
-                    "time": "18:42"
+                    "time": "18:42",
+                    "link":"https://www.youtube.com/watch?v=Efrhh4Ijmko&ab_channel=sable"
                 },
                 {
                     "id": 4,
                     "name": "Emrys",
-                    "time": "18:42"
+                    "time": "18:42",
+                    "link":"https://www.twitch.tv/videos/1724416376"
                 },
                 {
                     "id": 5,
                     "name": "Dank Slushie",
-                    "time": "18:44"
+                    "time": "18:44",
+                    "link":"https://www.youtube.com/watch?v=wNxHUOM2yh0&ab_channel=DankSlushie"
                 },
                 {
                     "id": 6,
                     "name": "Zo Ratpr",
-                    "time": "18:48"
+                    "time": "18:48",
+                    "link": "https://www.youtube.com/watch?v=PaQRQGzcpZ8&ab_channel=Freckleston"
                 },
                 {
                     "id": 7,
                     "name": "Freckleston",
-                    "time": "18:52"
+                    "time": "18:52",
+                    "link": "https://www.youtube.com/watch?v=PaQRQGzcpZ8&ab_channel=Freckleston"
                 }
             ]
         }],
@@ -277,76 +268,69 @@
         "url": "./assets/Buried.png",
         "trophy": [
             {
-                "name": "La tour de Babel",
+                "name": "Adieu la fouine",
                 "condition": "Finir le secret de la map",
                 "type": "or"
               },
               {
-                "name": "Ne tirez pas avant de voir",
-                "condition": "Ouvrir toutes les portes de la carte",
+                "name": "Bête des enfers",
+                "condition": "Obtenez le Tomahawk infernal.",
                 "type": "argent"
               },
               {
-                "name": "La lueur dans leur yeux",
-                "condition": "Assommer 10 zombies à l'aide d'un IEM",
-                "type": "bronze"
-              },
-              {
-                "name": "La bus party",
-                "condition": "Équiper tous les ajouts possibles sur le bus",
-                "type": "bronze"
-              },
-              {
-                "name": "Dansez sur ma tombe",
-                "condition": "Récupérer votre pierre tombale",
-                "type": "bronze"
-              },
-              {
-                "name": "L'équipement fourni peut varier",
-                "condition": "Construire les 4 objest de la carte",
+                "name": "Terminez le cycle 3 fois.",
+                "condition": "Boucle bouclée",
                 "type": "argent"
               },
               {
-                "name": "Tu n'as aucun pouvoir sur moi",
-                "condition": "Tuez-le sans qu'il vous attaque.",
+                "name": "Sous acide",
+                "condition": "Convertissez une arme avec un kit.",
                 "type": "bronze"
               },
               {
-                "name": "Ils n'existent pas",
-                "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                "name": "Confinement total",
+                "condition": "Brutus termine sa patrouille.",
+                "type": "bronze"
+              },
+              {
+                "name": "Explosion gustative",
+                "condition": "Tuez 10 zombies à la fois avec une nouvelle boisson",
+                "type": "argent"
+              },
+              {
+                "name": "Progression paranormale",
+                "condition": "ouvrez une porte sans dépenser de points",
+                "type": "bronze"
+              },
+              {
+                "name": "Piégés dans le temps",
+                "condition": "Utilisez et améliorez tous les pièges avant la manche 10.",
                 "type": "argent"
               },
               {
                 "name": "Économique",
                 "condition": "Utilisez un moyen de transport alternatif.",
                 "type": "bronze"
-              },
-              {
-                "name": "Happy hour",
-                "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
-                "type": "bronze"
-            }    
+              }
         ],
         "record": [
             {
                 "id": 1,
                 "name": "Itz Nukez",
-                "time": "11:24"
+                "time": "11:24",
+                "link": "https://www.youtube.com/watch?v=OualvCHjjtU&ab_channel=ItIsNukez"
             },
             {
                 "id": 2,
                 "name": "TheMDof106",
-                "time": "11:47"
+                "time": "11:47",
+                "link": "https://www.twitch.tv/videos/1790493212"
             },
             {
                 "id": 3,
                 "name": "Ptare",
-                "time": "12:29"
-            },
-            {
-                "id": 4,
-                "name": "Hacher",
-                "time": "12:38"
+                "time": "12:29",
+                "link": "https://www.youtube.com/watch?v=CD6wyQ9yPo4&ab_channel=PTare"
             }
         ]
     }],
@@ -356,53 +340,53 @@
             "url": "./assets/Origins.jpeg",
             "trophy": [
                 {
-                    "name": "La tour de Babel",
-                    "condition": "Finir le secret de la map",
+                    "name": "Petite fille perdue",
+                    "condition": "Libérer Samantha.",
                     "type": "or"
                   },
                   {
-                    "name": "Ne tirez pas avant de voir",
-                    "condition": "Ouvrir toutes les portes de la carte",
+                    "name": "Je ne suis pas chercheur d'or",
+                    "condition": "Partager une arme que vous avez déterrée.",
                     "type": "argent"
                   },
                   {
-                    "name": "La lueur dans leur yeux",
-                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                    "name": "Toute votre base",
+                    "condition": "Activer tous les générateurs sans en laisser un seul s'arrêter.",
                     "type": "bronze"
                   },
                   {
-                    "name": "La bus party",
-                    "condition": "Équiper tous les ajouts possibles sur le bus",
+                    "name": "Poignée Kung Fu",
+                    "condition": "Se libérer et libérer un autre soldat des griffes du soldat Panzer en une partie.",
                     "type": "bronze"
                   },
                   {
-                    "name": "Dansez sur ma tombe",
-                    "condition": "Récupérer votre pierre tombale",
+                    "name": "Jeu de pouvoir",
+                    "condition": "fabriquer tous les bâtons élémentaires en une partie.",
                     "type": "bronze"
                   },
                   {
-                    "name": "L'équipement fourni peut varier",
-                    "condition": "Construire les 4 objest de la carte",
+                    "name": "Je suis sur un char !",
+                    "condition": "Conduire le char à travers la carte sans en descendre.",
                     "type": "argent"
                   },
                   {
-                    "name": "Tu n'as aucun pouvoir sur moi",
-                    "condition": "Tuez-le sans qu'il vous attaque.",
+                    "name": "Sauver la mise...",
+                    "condition": "Dans Origins, réanimer un autre joueur de quatre manières différentes.",
                     "type": "bronze"
                   },
                   {
-                    "name": "Ils n'existent pas",
-                    "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                    "name": "Le maître du camouflage",
+                    "condition": "Réanimer 3 joueurs avec du sang de zombie et activer un générateur en une partie.",
                     "type": "argent"
                   },
                   {
-                    "name": "Économique",
-                    "condition": "Utilisez un moyen de transport alternatif.",
+                    "name": "Surdoué",
+                    "condition": "Terminer les 4 défis en une partie.",
                     "type": "bronze"
                   },
                   {
-                    "name": "Happy hour",
-                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                    "name": "Le maître de la magie",
+                    "condition": "Utiliser tous les bâtons ultimes en une partie.",
                     "type": "bronze"
                 }    
             ],
@@ -410,37 +394,45 @@
                 {
                     "id": 1,
                     "name": "Scottydogs007",
-                    "time": "37:42"
+                    "time": "37:42",
+                    "link": "https://www.youtube.com/watch?v=fnt4J6x2hxc&ab_channel=ScottyDogs007"
                 },
                 {
                     "id": 2,
                     "name": "Dank Slushie",
-                    "time": "39:49"
+                    "time": "39:49",
+                    "link": "https://www.youtube.com/watch?v=LT-WYoeBUDU&ab_channel=DankSlushie"
                 },
                 {
                     "id": 3,
                     "name": "Thomas",
-                    "time": "13:48"
+                    "time": "13:48",
+                    "link": "https://www.youtube.com/watch?v=KhPno8TaIM8&ab_channel=faronsson"
                 },
                 {
                     "id": 4,
                     "name": "Faronsson",
-                    "time": "41:42"
+                    "time": "41:42",
+                    "link": "https://www.youtube.com/watch?v=qze_QtGfy6M&ab_channel=Huth"
                 },
                 {
                     "id": 5,
                     "name": "Huth",
-                    "time": "41:50"
+                    "time": "41:50",
+                    "link": "https://www.twitch.tv/videos/1513122955"
+
                 },
                 {
                     "id": 6,
                     "name": "SnowySticken",
-                    "time": "42:03"
+                    "time": "42:03",
+                    "link": "https://www.twitch.tv/videos/1705436739"
                 },
                 {
                     "id": 7,
                     "name": "De_averagegamer",
-                    "time": "42:14"
+                    "time": "42:14",
+                    "link": "https://www.youtube.com/watch?v=Z3nQl28HY2U&ab_channel=UncleTima"
                 }
             ]
         }]

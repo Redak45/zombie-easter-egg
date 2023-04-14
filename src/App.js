@@ -18,13 +18,14 @@ import data from './data/data'
 
 
 function App() {
- 
+  
+
   const tranzitProps = {
     maps: data.tranzit[0].maps,
-    link1: "/secretTranzit",
-    link2: "/baseTranzit",
-    link3: "/trophyTranzit",
-    link4: "/recordTranzit",
+    link1: "/secrettranzit",
+    link2: "/basetranzit",
+    link3: "/trophytranzit",
+    link4: "/recordtranzit",
     banner: data.tranzit[0].url,
   };
 
