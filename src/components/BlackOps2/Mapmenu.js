@@ -10,7 +10,7 @@ import data from '../../data/data';
 import Tranzit from './assets/Tranzit.png';
 
 const MapMenu = ({maps, link1, link2, link3, link4, banner}) => {
-console.log(data.tranzit[0].url);
+
 
 return (
         

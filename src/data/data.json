@@ -55,7 +55,7 @@
                     "type": "bronze"
                 }    
             ],
-            "record1": [
+            "record": [
                 {
                     "id": 1,
                     "name": "Ali",
@@ -97,7 +97,59 @@
         {
             "maps": "Die Rise",
             "url": "./assets/DieRise.png",
-            "record2": [
+            "trophy": [
+                {
+                    "name": "La tour de Babel",
+                    "condition": "Finir le secret de la map",
+                    "type": "or"
+                  },
+                  {
+                    "name": "Ne tirez pas avant de voir",
+                    "condition": "Ouvrir toutes les portes de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "La lueur dans leur yeux",
+                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "La bus party",
+                    "condition": "Équiper tous les ajouts possibles sur le bus",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Dansez sur ma tombe",
+                    "condition": "Récupérer votre pierre tombale",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "L'équipement fourni peut varier",
+                    "condition": "Construire les 4 objest de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Tu n'as aucun pouvoir sur moi",
+                    "condition": "Tuez-le sans qu'il vous attaque.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Ils n'existent pas",
+                    "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Économique",
+                    "condition": "Utilisez un moyen de transport alternatif.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Happy hour",
+                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                    "type": "bronze"
+                }    
+            ],
+            "record": [
                 {
                     "id": 1,
                     "name": "test",
@@ -139,10 +191,62 @@
         {
             "maps": "Mob Of the dead",
             "url": "./assets/Mobofthedead.png",
-            "record3": [
+            "trophy": [
+                {
+                    "name": "La tour de Babel",
+                    "condition": "Finir le secret de la map",
+                    "type": "or"
+                  },
+                  {
+                    "name": "Ne tirez pas avant de voir",
+                    "condition": "Ouvrir toutes les portes de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "La lueur dans leur yeux",
+                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "La bus party",
+                    "condition": "Équiper tous les ajouts possibles sur le bus",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Dansez sur ma tombe",
+                    "condition": "Récupérer votre pierre tombale",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "L'équipement fourni peut varier",
+                    "condition": "Construire les 4 objest de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Tu n'as aucun pouvoir sur moi",
+                    "condition": "Tuez-le sans qu'il vous attaque.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Ils n'existent pas",
+                    "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Économique",
+                    "condition": "Utilisez un moyen de transport alternatif.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Happy hour",
+                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                    "type": "bronze"
+                }    
+            ],
+            "record": [
                 {
                     "id": 1,
-                    "name": "test",
+                    "name": "testssss",
                     "time": "10:45"
                 },
                 {
@@ -181,7 +285,59 @@
     {
         "maps": "Bureid",
         "url": "./assets/Buried.png",
-        "record4": [
+        "trophy": [
+            {
+                "name": "La tour de Babel",
+                "condition": "Finir le secret de la map",
+                "type": "or"
+              },
+              {
+                "name": "Ne tirez pas avant de voir",
+                "condition": "Ouvrir toutes les portes de la carte",
+                "type": "argent"
+              },
+              {
+                "name": "La lueur dans leur yeux",
+                "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                "type": "bronze"
+              },
+              {
+                "name": "La bus party",
+                "condition": "Équiper tous les ajouts possibles sur le bus",
+                "type": "bronze"
+              },
+              {
+                "name": "Dansez sur ma tombe",
+                "condition": "Récupérer votre pierre tombale",
+                "type": "bronze"
+              },
+              {
+                "name": "L'équipement fourni peut varier",
+                "condition": "Construire les 4 objest de la carte",
+                "type": "argent"
+              },
+              {
+                "name": "Tu n'as aucun pouvoir sur moi",
+                "condition": "Tuez-le sans qu'il vous attaque.",
+                "type": "bronze"
+              },
+              {
+                "name": "Ils n'existent pas",
+                "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                "type": "argent"
+              },
+              {
+                "name": "Économique",
+                "condition": "Utilisez un moyen de transport alternatif.",
+                "type": "bronze"
+              },
+              {
+                "name": "Happy hour",
+                "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                "type": "bronze"
+            }    
+        ],
+        "record": [
             {
                 "id": 1,
                 "name": "test",
@@ -223,7 +379,59 @@
         {
             "maps": "Origins",
             "url": "./assets/Origins.jpeg",
-            "record3": [
+            "trophy": [
+                {
+                    "name": "La tour de Babel",
+                    "condition": "Finir le secret de la map",
+                    "type": "or"
+                  },
+                  {
+                    "name": "Ne tirez pas avant de voir",
+                    "condition": "Ouvrir toutes les portes de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "La lueur dans leur yeux",
+                    "condition": "Assommer 10 zombies à l'aide d'un IEM",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "La bus party",
+                    "condition": "Équiper tous les ajouts possibles sur le bus",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Dansez sur ma tombe",
+                    "condition": "Récupérer votre pierre tombale",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "L'équipement fourni peut varier",
+                    "condition": "Construire les 4 objest de la carte",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Tu n'as aucun pouvoir sur moi",
+                    "condition": "Tuez-le sans qu'il vous attaque.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Ils n'existent pas",
+                    "condition": "Tuez un habitant de la forêt alors qu'il est accroché à vous.",
+                    "type": "argent"
+                  },
+                  {
+                    "name": "Économique",
+                    "condition": "Utilisez un moyen de transport alternatif.",
+                    "type": "bronze"
+                  },
+                  {
+                    "name": "Happy hour",
+                    "condition": "achetez 2 atouts différents avant d'allumer l'électricité.",
+                    "type": "bronze"
+                }    
+            ],
+            "record": [
                 {
                     "id": 1,
                     "name": "test",

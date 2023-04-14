@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/record.css';
-import Timer from '../../Timer.js';
+import '../styles/record.css';
+import Timer from '../Timer';
 
 
 const TranzitRecord = ({records}) => {

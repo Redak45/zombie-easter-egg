@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../styles/trophy.css';
-import iconTrophy from '../../icons/trophy.png';
+import '../styles/trophy.css';
+import iconTrophy from '../icons/trophy.png';
 
 
 
@@ -12,7 +12,7 @@ const TranzitTrophy = ({trophies}) => {
   // Filtre les trophées en fonction du type sélectionné. 
   const filteredTrophies = filter ? trophies.filter(trophy => trophy.type === filter) : trophies;
 
-  // F  onction qui met à jour l'état filter avec le type sélectionné.
+  // F onction qui met à jour l'état filter avec le type sélectionné.
   const handleFilterClick = (type) => {
     setFilter(type);
   };
