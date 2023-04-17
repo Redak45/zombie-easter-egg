@@ -5,7 +5,7 @@
 .trophydescription{
     color: #9C9C9C;
     margin: 20px;
-    font-size: 12px; 
+    font-size: 16px; 
     text-align: center; 
     font-family: 'Josefin Sans', sans-serif;                                        
 }
@@ -65,7 +65,7 @@
 
 .buttonAll{
     padding: 10px;
-    background-color: #980808;
+    background-color: #C59535;
     color: #ffffff;
     font-family: 'Quicksand';
     font-size: 17px;
@@ -105,4 +105,12 @@
     font-weight: bold;
     margin-right: 10px;
     border-radius: 10px;      
+}
+
+.buttonAll.active,
+.buttonBronze.active,
+.buttonSilver.active,
+.buttonGold.active {
+  background-color: #980808;
+
 }

@@ -4,17 +4,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/BlackOps2/Home';
 import Parameters from './components/Parameters.js';
 import MapMenu from './components/BlackOps2/Mapmenu.js'
-import Tranzit from './components/BlackOps2/Tranzit/Tranzit.js';
 import Trophy from './components/BlackOps2/Trophy.js';
 import TranzitSecret from './components/BlackOps2/Tranzit/TranzitSecret.js';
-import Record from './components/BlackOps2/Record.js';
+import DieriseSecret  from './components/BlackOps2/Dierise/DieriseSecret.js';
+import MobofthedeadSecret from './components/BlackOps2/Mobofthedead/MobofthedeadSecret.js';
+import BuriedSecret from './components/BlackOps2/Buried/BuriedSecret';
+import OriginsSecret from './components/BlackOps2/Origins/OriginsSecret';
 import TranzitBase from './components/BlackOps2/Tranzit/TranzitBase';
-import Dierise from './components/BlackOps2/Dierise/Dierise.js';
-import Mobofthedead from './components/BlackOps2/Mobofthedead/Mobofthedead.js';
-import Buried from './components/BlackOps2/Buried/Buried.js';
-import Origins from './components/BlackOps2/Origins/Origins.js';
-import data from './data/data'
 
+import Record from './components/BlackOps2/Record.js';
+import data from './data/data'
 
 
 function App() {
@@ -66,7 +65,6 @@ function App() {
   };
 
 
-  
 
   return (
    
@@ -81,6 +79,10 @@ function App() {
         <Route  exact path="/buried" element={<MapMenu {...buriedProps} />}> </Route>
         <Route  exact path="/origins" element={<MapMenu {...originsProps} />}> </Route>
         <Route  exact path="/secrettranzit" element={<TranzitSecret maps={data.tranzit[0].maps} />}> </Route>
+        <Route  exact path="/secretdierise" element={<DieriseSecret maps={data.dierise[0].maps} />}> </Route>
+        <Route  exact path="/secretmobofthedead" element={<MobofthedeadSecret maps={data.mobofthedead[0].maps} />}> </Route>
+        <Route  exact path="/secretburied" element={<BuriedSecret maps={data.buried[0].maps} />}> </Route>
+        <Route  exact path="/secretorigins" element={<OriginsSecret maps={data.origins[0].maps} />}> </Route>
         <Route  exact path="/basetranzit" element={<TranzitBase maps={data.tranzit[0].maps} />}> </Route>
         <Route  exact path="/recordtranzit" element={<Record records={data.tranzit[0].record} />}> </Route>
         <Route  exact path="/recorddierise" element={<Record records={data.dierise[0].record} />}> </Route>
@@ -91,8 +93,7 @@ function App() {
         <Route  exact path="/trophydierise" element={<Trophy trophies={data.dierise[0].trophy} />}> </Route>
         <Route  exact path="/trophymobofthedead" element={<Trophy trophies={data.mobofthedead[0].trophy} />}> </Route>
         <Route  exact path="/trophyburied" element={<Trophy trophies={data.buried[0].trophy} />}> </Route>
-        <Route  exact path="/trophyorigins" element={<Trophy trophies={data.origins[0].trophy} />}> </Route>
-        
+        <Route  exact path="/trophyorigins" element={<Trophy trophies={data.origins[0].trophy} />}> </Route> 
 
         </Routes>
     </BrowserRouter>

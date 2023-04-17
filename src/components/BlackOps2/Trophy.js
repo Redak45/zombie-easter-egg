@@ -8,6 +8,8 @@ const TranzitTrophy = ({trophies}) => {
   
   // Stocke le type de trophée sélectionné 
   const [filter, setFilter] = useState(null);
+  // Stocker le type de filtre actif
+  const [activeFilter, setActiveFilter] = useState(null);
  
   // Filtre les trophées en fonction du type sélectionné. 
   const filteredTrophies = filter ? trophies.filter(trophy => trophy.type === filter) : trophies;
@@ -15,6 +17,7 @@ const TranzitTrophy = ({trophies}) => {
   // F onction qui met à jour l'état filter avec le type sélectionné.
   const handleFilterClick = (type) => {
     setFilter(type);
+    setActiveFilter(type);
   };
   
 return (
@@ -31,10 +34,10 @@ return (
     </div>
 
     <div className="filterbuttons">
-        <button className="buttonAll" onClick={() => handleFilterClick(null)}>Tous</button>
-        <button className="buttonBronze" onClick={() => handleFilterClick('bronze')}>Bronze</button>
-        <button className="buttonSilver" onClick={() => handleFilterClick('argent')}>Argent</button>
-        <button className="buttonGold" onClick={() => handleFilterClick('or')}>Or</button>
+        <button className={`buttonAll ${activeFilter === null ? 'active' : ''}`} onClick={() => handleFilterClick(null)}>Tous</button>
+        <button className={`buttonBronze ${activeFilter === 'bronze' ? 'active' : ''}`} onClick={() => handleFilterClick('bronze')}>Bronze</button>
+        <button className={`buttonSilver ${activeFilter === 'argent' ? 'active' : ''}`} onClick={() => handleFilterClick('argent')}>Argent</button>
+        <button className={`buttonGold ${activeFilter === 'or' ? 'active' : ''}`} onClick={() => handleFilterClick('or')}>Or</button>
       </div>
 
 
