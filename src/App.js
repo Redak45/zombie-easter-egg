@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js';
+import Header from './components/Header.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/BlackOps2/Home';
 import Parameters from './components/Parameters.js';
@@ -11,7 +12,7 @@ import MobofthedeadSecret from './components/BlackOps2/Mobofthedead/Mobofthedead
 import BuriedSecret from './components/BlackOps2/Buried/BuriedSecret';
 import OriginsSecret from './components/BlackOps2/Origins/OriginsSecret';
 import TranzitBase from './components/BlackOps2/Tranzit/TranzitBase';
-
+import SignUpModal from './components/Navbar/SignUpModal';
 import Record from './components/BlackOps2/Record.js';
 import data from './data/data'
 
@@ -65,11 +66,12 @@ function App() {
   };
 
 
-
   return (
    
     <BrowserRouter>
+     <Header />
      <Navbar />
+     <SignUpModal />
         <Routes>
         <Route  exact path="/" element={<Home />}> </Route>
         <Route  exact path="/parameters" element={<Parameters />}> </Route>

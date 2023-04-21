@@ -10,7 +10,6 @@ const Record = ({records}) => {
 
   return (
     <div className="ContainerRecord">
-      <h1> ZOMBIE EE </h1>
       
       <div className="banner bannerTranzit">
         <h2> TRANZIT : SPEEDRUN RECORD </h2> 

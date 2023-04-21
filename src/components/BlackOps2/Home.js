@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 
 const Home = () => {
+	
 return (
 
 	<div className="Container">
-	<h1> ZOMBIE EE </h1>	
 
 	<div className="Card">
 

@@ -23,7 +23,6 @@ const TranzitTrophy = ({trophies}) => {
 return (
 
     <div className="ContainerTrophy">
-	  <h1> ZOMBIE EE </h1>
     
     <div className="banner bannerTranzit">
       <h2> TRANZIT : TROPHEES</h2> 

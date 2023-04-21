@@ -9,7 +9,6 @@ const DieriseSecret = ({maps}) => {
 return (
 
     <div className="ContainerSecret">
-	  <h1> ZOMBIE EE </h1>
     
     <div className="banner bannerTranzit">
       <h2> {maps} : SECRET PRINCIPALE </h2> 

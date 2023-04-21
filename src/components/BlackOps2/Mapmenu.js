@@ -6,8 +6,7 @@ import build from '../icons/build.png';
 import timer from '../icons/timer.png';
 import trophy from '../icons/trophy.png';
 import { Link } from "react-router-dom";
-import data from '../../data/data';
-import Tranzit from './assets/Tranzit.png';
+
 
 const MapMenu = ({maps, link1, link2, link3, link4, banner}) => {
 
@@ -15,7 +14,6 @@ const MapMenu = ({maps, link1, link2, link3, link4, banner}) => {
 return (
         
     <div className="ContainerMap">
-  	<h1>  ZOMBIE EE</h1>
 
     <div className="banner" style={{ backgroundImage: `url(${banner})` }}>
       <h2> {maps} </h2> 

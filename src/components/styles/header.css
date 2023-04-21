@@ -1,0 +1,37 @@
+h1{
+    color: #C59535; 
+    font-family: 'Zombie';
+    padding: 10px;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonHeader{
+    margin-top: 8px;
+}
+
+.BouttonConnexion{
+    padding: 7px;
+    margin-right: 5px;
+    width: 90px;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: bold; 
+    border-radius: 8px;
+    background-color: #C59535;
+}
+
+.BouttonDeconnexion{
+    padding: 7px;
+    width: 90px;
+    background-color: #980808;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+}

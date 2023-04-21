@@ -8,7 +8,6 @@ import avogadro from '../assets/avogadro.jpeg';
 const TranzitSecret = ({maps}) => {
 
 
-  const [showSommaire, setShowSommaire] = useState(false);
   const [showModal, setShowModal] = useState(false);
   
   // Fonction qui va changer l'état de l'affichage du sommaire lorsque le bouton est cliqué:
@@ -17,12 +16,10 @@ const TranzitSecret = ({maps}) => {
     setShowModal(!showModal);
   };
 
- 
-    
+   
 return (
 
     <div className="ContainerSecret">
-	  <h1> ZOMBIE EE </h1>
     
     <div className="banner bannerTranzit">
       <h2> {maps} : SECRET PRINCIPALE </h2> 

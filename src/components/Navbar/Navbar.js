@@ -13,6 +13,7 @@ const Navbar = () => {
 const [icon1, setIcon1] = useState(iconHomeRed);
 const [icon2, setIcon2] = useState(iconParametersGold);
 
+
   const handleClick = () => {
     if (icon1 === iconHomeRed) {
     	setIcon1(iconHomeGold);
