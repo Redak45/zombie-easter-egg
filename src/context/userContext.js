@@ -1,4 +1,4 @@
-import { createContext, useState} from "react";
+import { createContext, useState, useEffect} from "react";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import {auth} from "../firebase-config"
 
@@ -13,10 +13,20 @@ const UserContextProvider = (props) =>  {
 
   // Utilisateur qui va se connecter
   const [currentUser, setCurrentUser] = useState();
-  // Le temps d'avoir une réponse de Firebasd
+  // Le temps d'avoir une réponse de Firebase
   const [loadingData, setLoadingData] = useState(true);
+  
 
-  const [modalState, setModalState] = useState({ signUpModal: false, signInModal: false })
+  const [modalState, setModalState] = useState({  signUpModal: false, signInModal: false })
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user);
+      setLoadingData(false);
+    });
+    return unsubscribe;
+  }, []);
+
   
   const toggleModals = modal => {  
     if(modal === "signIn") {
@@ -44,7 +54,7 @@ const UserContextProvider = (props) =>  {
 
   return (
       
-    <UserContext.Provider value={{modalState, toggleModals, signUp, signIn}}>
+    <UserContext.Provider value={{modalState, toggleModals, signUp, signIn, currentUser, loadingData }}>
       {props.children}
     </UserContext.Provider>
   )

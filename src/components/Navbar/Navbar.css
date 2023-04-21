@@ -40,7 +40,7 @@
 
 .modalSignUp-content{
     padding: 20px;
-    height: 230px;
+    height: 350px;
     border-radius: 10px;
     width: 300px;
     font-family: 'Montserrat';
@@ -83,6 +83,7 @@
   margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .Validation{
