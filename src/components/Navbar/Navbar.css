@@ -11,7 +11,7 @@
     margin: auto;  
 }
 
-.modalSignUp{
+.modalSign{
     position: fixed;
     top: 0;
     left: 0;
@@ -26,21 +26,21 @@
     justify-content: center;
 }
 
-.modalSignUp.show {
+.modalSign.show {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;
 }
   
-.modalSignUp.hide {
+.modalSign.hide {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.modalSignUp-content{
+.modalSign-content{
     padding: 20px;
-    height: 350px;
+    height: 300px;
     border-radius: 10px;
     width: 300px;
     font-family: 'Montserrat';
@@ -48,16 +48,16 @@
     border: solid 4px #C59535;
     color: #ffffff;
 }
-.modalSignUp-content span{
+.modalSign-content span{
     font-size: 20px;
 }
 
-.modalSignUp-content label {
+.modalSign-content label {
     display: block;
     width: 100%;
 }
 
-.modalSignUp-content input {
+.modalSign-content input {
     width: 97%;
     padding: 2px;
     margin-top: 5px;
@@ -67,15 +67,15 @@
     background-color: #C59535;
 }
 
-.modalSignUpEmail{
+.modalSignEmail{
+    margin-top: 10px;
+}
+
+.modalSignPsw{
     margin-top: 20px;
 }
 
-.modalSignUpPsw{
-    margin-top: 20px;
-}
-
-.modalSignUpButton{
+.modalSignButton{
   padding: 10px;
   color: #ffffff;
   background-color: #C59535;

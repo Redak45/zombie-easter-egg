@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUpModal = () => {
 
-  const { modalState, toggleModals, signUp } = useContext(UserContext);
+  const { modalState, toggleModals, signIn } = useContext(UserContext);
 
   const navigate = useNavigate();
   // Validation pour le mot de passe
@@ -23,19 +23,9 @@ const SignUpModal = () => {
   const handleForm = async (e) => {
 
     e.preventDefault()
-
-    // Comparaison valeur de la longeur du mot de passe 
-    if ((inputs.current[1].value.length || inputs.current[2].value.length) < 6) {
-
-      setValidation("6 characters min")
-      return;
-    }
-    else if (inputs.current[1].value !== inputs.current[2].value) {
-      setValidation("Pas le même mot de passe")
-      return;
-    }
+  
     try {
-        await signUp(
+        await signIn(
         inputs.current[0].value,
         inputs.current[1].value
       )
@@ -45,15 +35,10 @@ const SignUpModal = () => {
       navigate("/account/account-page")
       toggleModals("close")
 
-    } catch (err) {
-
-      if (err.code === "auth/invalid-email") {
-        setValidation("Email invalide")
-      }
-      if (err.code === "auth/email-already-in-use") {
-        setValidation("Email déja utilisé")
-      }
+    } catch{
+      setValidation("L'Email et/ou le mot de passe est incorrect")
     }
+
   }
 
   const closeModal = () => {
@@ -63,25 +48,21 @@ const SignUpModal = () => {
 
 
   return (
-    <div className={`modalSign ${modalState.signUpModal ? "show" : "hide"}`}>
+    <div className={`modalSign ${modalState.signInModal ? "show" : "hide"}`}>
       <form ref={formRef} className="modalSign-content" onSubmit={handleForm} >
-        <span>Créer un compte</span>
+        <span>Se connecter</span>
         <div className="modalSignEmail">
           <label htmlFor="email">E-mail</label>
           <input ref={addInputs} type="email" id="email" />
         </div>
         <div className="modalSignPsw">
-          <label htmlFor="password">Mot de passe</label>
+          <label htmlFor="password">Mot des passe</label>
+
           <input ref={addInputs} type="password" id="password" />
-        </div>
-        <div className="modalSignPsw">
-          <label htmlFor="password">Confirmer le mot de passe</label>
-          <input ref={addInputs} type="password" id="passwordconfirm" />
           <p className="Validation" >{validation}</p>
         </div>
-
         <button type="submit" className="modalSignButton" onClick={closeModal}>Annuler</button>
-        <button type="submit" className="modalSignButton">S'inscrire</button>
+        <button type="submit" className="modalSignButton">Se connecter</button>
       </form>
     </div>
   );
