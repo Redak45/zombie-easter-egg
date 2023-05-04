@@ -1,13 +1,13 @@
-h1{
-    color: #C59535; 
-    font-family: 'Zombie';
-    padding: 10px;
-}
-
 .Header{
     display: flex;
     justify-content: space-between;
 }
+
+.Header img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 
 .ButtonHeader{
     margin-top: 8px;

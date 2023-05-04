@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { UserContext } from "../context/userContext";
 
 
 const Timer = () => {
 
-  const [timeElapsed, setTimeElapsed] = useState({ minutes: 0, seconds: 0 });
+  const { timeElapsed, setTimeElapsed } = useContext(UserContext);
   const [timerActive, setTimerActive] = useState(false);
+  
   useEffect(() => {
     if (timerActive) {
       const interval = setInterval(() => {

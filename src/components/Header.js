@@ -5,6 +5,7 @@ import { signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import { auth } from "../firebase-config"
 import '../components/styles/header.css';
+import logo from '../components/icons/logo.png';
 
 const Header = () => {
 
@@ -28,7 +29,7 @@ const Header = () => {
   return (
     <div className="Header">
       <Link to="/">
-        <h1> ZOMBIE EE </h1>
+      <img src={logo} width='150' alt="logo"/>
       </Link>
 
       <div className="ButtonHeader">
