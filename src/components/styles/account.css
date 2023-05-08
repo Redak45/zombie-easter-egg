@@ -1,0 +1,44 @@
+.AccountContainer{
+   text-align: center;
+   border-top: solid 4px #C59535;
+   border-bottom: solid 4px #C59535;
+   background-color: #4A4A4A;
+   margin-top: 30px;
+   padding: 20px;
+}
+
+
+.AccountTitle{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.AccountMap{
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #c59535;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+.AccountMap span{
+    font-weight: bold;
+} 
+
+.buttonSeeRecord{
+    padding: 7px;
+    width: 50px;
+    background-color: #980808;
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+}

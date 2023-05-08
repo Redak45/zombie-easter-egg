@@ -5,7 +5,6 @@ import { UserContext } from "../../../context/userContext";
 
 const Account = ({ path, ...props }) => {
   const { currentUser } = useContext(UserContext);
-  console.log("Private", currentUser)
 
   if (!currentUser) {
     return <Navigate to="/" />

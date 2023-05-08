@@ -37,7 +37,7 @@
 
 .trophyname{
     margin-left: 20px; 
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     margin-bottom: 5px;  
     color: #C59535;
@@ -67,7 +67,7 @@
     padding: 10px;
     background-color: #C59535;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     font-weight: bold;
     margin-right: 10px;
@@ -78,7 +78,7 @@
     padding: 10px;
     background-color: #C59535;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     font-weight: bold;
     margin-right: 10px;
@@ -89,7 +89,7 @@
     padding: 10px;
     background-color: #C59535;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     font-weight: bold;
     margin-right: 10px;
@@ -100,7 +100,7 @@
     padding: 10px;
     background-color: #C59535;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     font-weight: bold;
     margin-right: 10px;

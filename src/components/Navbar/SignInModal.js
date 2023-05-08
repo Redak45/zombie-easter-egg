@@ -31,7 +31,6 @@ const SignUpModal = () => {
       )
       // formRef.current.reset();
       setValidation("")
-      // console.log(cred);
       navigate("/account/account-page")
       toggleModals("close")
 

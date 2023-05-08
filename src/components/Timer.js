@@ -1,12 +1,27 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { UserContext } from "../context/userContext";
 
-
 const Timer = () => {
-
-  const { timeElapsed, setTimeElapsed } = useContext(UserContext);
+  const { timeElapsed, setTimeElapsed, mapTimes, setMapTimes  } = useContext(UserContext);
   const [timerActive, setTimerActive] = useState(false);
-  
+  const { timeElapsedTranzit, setTimeElapsedTranzit } = useContext(UserContext);
+  const { timeElapsedDieRise, setTimeElapsedDieRise } = useContext(UserContext);
+  const { timeElapsedMod, setTimeElapsedMod } = useContext(UserContext);
+  const { timeElapsedBuried, setTimeElapsedBuried } = useContext(UserContext);
+  const { timeElapsedOrigins, setTimeElapsedOrigins } = useContext(UserContext);
+
+
+  const handleValidation = () => {
+  setMapTimes(prevMapTimes => ({
+    ...prevMapTimes,
+    tranzit: timeElapsedTranzit,
+    dieRise: timeElapsedDieRise,
+    mod: timeElapsedMod,
+    buried: timeElapsedBuried,
+    origins: timeElapsedOrigins,
+  }));
+};
+
   useEffect(() => {
     if (timerActive) {
       const interval = setInterval(() => {
@@ -21,7 +36,7 @@ const Timer = () => {
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [timerActive]);
+  }, [timerActive, setTimeElapsed]);
 
   const handleStartTimer = () => {
     setTimerActive(true);
@@ -37,36 +52,40 @@ const Timer = () => {
   };
 
   return (
-
     <div className="timerButton">
-
-      <button className="timerButton2" onClick={handleResetTimer}> Réinitialiser</button>
-
+      <button className="timerButton2" onClick={handleResetTimer}>
+        Réinitialiser
+      </button>
       {!timerActive ? (
-        <button className="timerButton1" onClick={handleStartTimer}> Démarrer</button>
+        <button className="timerButton1" onClick={handleStartTimer}>
+          Démarrer
+        </button>
       ) : (
-          <button className="timerButton1" onClick={handleStopTimer}> Stop</button>
-        )}
-
-
-
+        <button className="timerButton1" onClick={handleStopTimer}>
+          Stop
+        </button>
+      )}
       {timerActive && (
         <div className="timer">
-          {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes}:{timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
+          {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes}:
+          {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
         </div>
       )}
-
       {!timerActive && (timeElapsed.minutes > 0 || timeElapsed.seconds > 0) && (
         <div className="timer">
-          Votre temps est de {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes}:
-             {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
+         <span> {' '} 
+          {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes} :{' '}
+          {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
+          </span>
+          <button className="timerButton3" onClick={() => handleValidation(timeElapsed)}>
+            Valider votre temps
+          </button>
         </div>
+      
       )}
-
+    
     </div>
-
   );
-
 };
 
 export default Timer;

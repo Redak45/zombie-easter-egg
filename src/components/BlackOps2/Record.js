@@ -5,14 +5,14 @@ import iconYoutube from '../icons/youtube.png';
 import iconTwitch from '../icons/twitch.png';
 
 
-const Record = ({records}) => {
+const Record = ({records,maps}) => {
   
 
   return (
     <div className="ContainerRecord">
       
       <div className="banner bannerTranzit">
-        <h2> TRANZIT : SPEEDRUN RECORD </h2> 
+        <h2> {maps} : SPEEDRUN RECORD </h2> 
       </div>
 
       <div className="trophydescription">

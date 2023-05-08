@@ -8,21 +8,23 @@
 
 .timer{
     padding: 10px; 
-    width: 170px;
+    width: 300px;
     margin: auto;
     margin-top: 20px;
-    color: #ffffff;
-    font-family: 'Quicksand';
+    color: #C59535;
+    font-family: 'zombie';
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    border: solid 4px#C59535;
 }
+
 
 .timerButton1{
     padding: 10px;
     background-color: #980808;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
@@ -33,11 +35,23 @@
     padding: 10px;
     background-color: #C59535;
     color: #ffffff;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin-right: 10px;
     border-radius: 10px;
+}
+.timerButton3{
+    padding: 10px;
+    background-color: #980808;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 .record{
