@@ -1,6 +1,10 @@
 import { createContext, useState, useEffect } from "react";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase-config"
+import { doc, updateDoc, getDoc, setDoc, collection } from "firebase/firestore";
+import { db } from "../firebase-config";
+
+
 
 export const UserContext = createContext()
 
@@ -16,6 +20,27 @@ const UserContextProvider = (props) => {
   const [timeElapsedMod, setTimeElapsedMod] = useState({ minutes: 0, seconds: 0 });
   const [timeElapsedBuried, setTimeElapsedBuried] = useState({ minutes: 0, seconds: 0 });
   const [timeElapsedOrigins, setTimeElapsedOrigins] = useState({ minutes: 0, seconds: 0 });
+  const [timerData, setTimerData] = useState({});
+
+  useEffect(() => {
+    const fetchTimerData = async () => {
+      const user = auth.currentUser;
+      if (user) {
+        const userId = user.email;
+        const userCollection = collection(db, userId);
+        const timerDoc = doc(userCollection, 'Timer');
+        const timerSnapshot = await getDoc(timerDoc);
+        if (timerSnapshot.exists()) {
+          setTimerData(timerSnapshot.data());
+         
+        }
+      }
+    };
+
+    fetchTimerData();
+  }, []);
+
+  
 
 
   const [mapTimes, setMapTimes] = useState({
@@ -69,40 +94,91 @@ const UserContextProvider = (props) => {
     }
   }
 
-  const handleValidation = (mapName, elapsedTime) => {
-    switch (mapName) {
-      case 'tranzit':
-        setTimeElapsedTranzit(elapsedTime);
-        break;
-      case 'dieRise':
-        setTimeElapsedDieRise(elapsedTime);
-        break;
-      case 'mod':
-        setTimeElapsedMod(elapsedTime);
-        break;
-      case 'buried':
-        setTimeElapsedBuried(elapsedTime);
-        break;
-      case 'origins':
-        setTimeElapsedOrigins(elapsedTime);
-        break;
-      default:
-        break;
+  const handleValidation = async (mapName, timeElapsed) => {
+    try {
+      const user = auth.currentUser;
+      if (user) {
+        const userId = user.email;
+  
+        // Conversion du temps de l'application (minutes et secondes) en secondes
+        const totalSeconds = timeElapsed.minutes * 60 + timeElapsed.seconds;
+  
+        // Met à jour la map correspondante dans la collection de l'utilisateur
+        const userCollection = collection(db, userId);
+        const timerDoc = doc(userCollection, "Timer");
+  
+        // Récupère les valeurs actuelles du document "Timer"
+        const timerSnapshot = await getDoc(timerDoc);
+        const currentTimerData = timerSnapshot.data();
+  
+        // Met à jour la map correspondante dans le document "Timer"
+        const updatedTimerData = {
+          ...currentTimerData,
+          [mapName]: totalSeconds
+        };
+  
+        await setDoc(timerDoc, updatedTimerData);
+  
+  
+        console.log("Temps validé avec succès pour la map", mapName);
+      } else {
+        // L'utilisateur n'est pas connecté ou auth.currentUser est null/indéfini
+        console.log("Utilisateur non connecté");
+      }
+    } catch (error) {
+      console.error("Erreur lors de la validation du temps :", error);
     }
   };
+  
+  
+  
+
+  const handleSignIn = async (email, password) => {
+    try {
+      const { user } = await signInWithEmailAndPassword(auth, email, password);
+
+      // Utiliser l'adresse e-mail comme identifiant de l'utilisateur
+      const userId = user.email;
+
+      // Créer un document avec l'userId dans la collection "users"
+      await setDoc(doc(db, "users", userId), {
+        // Ajouter d'autres champs si nécessaire
+      });
+
+      console.log("Utilisateur connecté avec succès !");
+    } catch (error) {
+      console.error("Erreur lors de la connexion de l'utilisateur :", error);
+  }
+}
+
+const handleSignUp = async (email, password) => {
+  try {
+    const { user } = await createUserWithEmailAndPassword(auth, email, password);
+
+    // Utiliser l'adresse e-mail comme identifiant de l'utilisateur
+    const userId = user.email;
+
+    // Créer un document "Timer" dans la collection correspondant à l'userId
+    await setDoc(doc(db, userId, "Timer"), {
+      tranzit:0,
+      dierise:0,  
+      mobofthedead:0,
+      buried:0,
+      origins:0,
+    });
+
+    console.log("Utilisateur connecté avec succès !");
+  } catch (error) {
+    console.error("Erreur lors de la connexion de l'utilisateur :", error);
+  }
+
+};
+  
 
   return (
 
-    <UserContext.Provider value={{ modalState, toggleModals, signUp, signIn, currentUser, loadingData, timeElapsed, setTimeElapsed, handleValidation, mapTimes, setMapTimes, timeElapsedTranzit,
-      setTimeElapsedTranzit,
-      timeElapsedDieRise,
-      setTimeElapsedDieRise,
-      timeElapsedMod,
-      setTimeElapsedMod,
-      timeElapsedBuried,
-      setTimeElapsedBuried,
-      timeElapsedOrigins,
-      setTimeElapsedOrigins, }}>
+    <UserContext.Provider value={{ modalState, toggleModals, signUp, signIn, currentUser, loadingData, timeElapsed, setTimeElapsed, handleValidation, mapTimes, setMapTimes, handleSignIn, handleSignUp
+     }}>
 
       {!loadingData && props.children}
     </UserContext.Provider>

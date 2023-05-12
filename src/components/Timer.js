@@ -4,23 +4,25 @@ import { UserContext } from "../context/userContext";
 const Timer = () => {
   const { timeElapsed, setTimeElapsed, mapTimes, setMapTimes  } = useContext(UserContext);
   const [timerActive, setTimerActive] = useState(false);
-  const { timeElapsedTranzit, setTimeElapsedTranzit } = useContext(UserContext);
+  /*const { timeElapsedTranzit, setTimeElapsedTranzit } = useContext(UserContext);
   const { timeElapsedDieRise, setTimeElapsedDieRise } = useContext(UserContext);
   const { timeElapsedMod, setTimeElapsedMod } = useContext(UserContext);
   const { timeElapsedBuried, setTimeElapsedBuried } = useContext(UserContext);
-  const { timeElapsedOrigins, setTimeElapsedOrigins } = useContext(UserContext);
+  const { timeElapsedOrigins, setTimeElapsedOrigins } = useContext(UserContext);*/
+  
+ 
+  const { handleValidation } = useContext(UserContext)
 
 
-  const handleValidation = () => {
-  setMapTimes(prevMapTimes => ({
-    ...prevMapTimes,
-    tranzit: timeElapsedTranzit,
-    dieRise: timeElapsedDieRise,
-    mod: timeElapsedMod,
-    buried: timeElapsedBuried,
-    origins: timeElapsedOrigins,
-  }));
-};
+  const handleClick = () => {
+    handleValidation("tranzit", timeElapsed);
+    handleValidation("dierise", timeElapsed);
+    handleValidation("mobofthedead", timeElapsed);
+    handleValidation("buried", timeElapsed);
+    handleValidation("origins", timeElapsed);
+  };
+
+
 
   useEffect(() => {
     if (timerActive) {
@@ -50,6 +52,7 @@ const Timer = () => {
     setTimeElapsed({ minutes: 0, seconds: 0 });
     setTimerActive(false);
   };
+  
 
   return (
     <div className="timerButton">
@@ -77,7 +80,7 @@ const Timer = () => {
           {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes} :{' '}
           {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
           </span>
-          <button className="timerButton3" onClick={() => handleValidation(timeElapsed)}>
+          <button className="timerButton3" onClick={() => handleClick()}>
             Valider votre temps
           </button>
         </div>

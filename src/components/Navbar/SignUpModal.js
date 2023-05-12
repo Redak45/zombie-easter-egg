@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUpModal = () => {
 
-  const { modalState, toggleModals, signUp } = useContext(UserContext);
+  const { modalState, toggleModals, signUp, handleSignUp } = useContext(UserContext);
 
   const navigate = useNavigate();
   // Validation pour le mot de passe
@@ -35,10 +35,10 @@ const SignUpModal = () => {
       return;
     }
     try {
-        await signUp(
-        inputs.current[0].value,
-        inputs.current[1].value
-      )
+
+      const email = inputs.current[0].value;
+      const password = inputs.current[1].value;
+      await handleSignUp(email, password);
   
       setValidation("")
     
@@ -68,15 +68,15 @@ const SignUpModal = () => {
         <span>Créer un compte</span>
         <div className="modalSignEmail">
           <label htmlFor="email">E-mail</label>
-          <input ref={addInputs} type="email" id="email" />
+          <input ref={addInputs} type="email" id="signupemail" />
         </div>
         <div className="modalSignPsw">
-          <label htmlFor="password">Mot de passe</label>
-          <input ref={addInputs} type="password" id="password" />
+          <label htmlFor="password" id="signuppassword">Mot de passe</label>
+          <input ref={addInputs} type="password" id="new-password" />
         </div>
         <div className="modalSignPsw">
-          <label htmlFor="password">Confirmer le mot de passe</label>
-          <input ref={addInputs} type="password" id="passwordconfirm" />
+          <label htmlFor="password"id="confirmPassword">Confirmer le mot de passe</label>
+          <input ref={addInputs} type="password" id="confirm-password" />
           <p className="Validation" >{validation}</p>
         </div>
 

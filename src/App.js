@@ -91,11 +91,11 @@ function App() {
         <Route exact path="/secretburied" element={<BuriedSecret maps={data.buried[0].maps} />}> </Route>
         <Route exact path="/secretorigins" element={<OriginsSecret maps={data.origins[0].maps} />}> </Route>
         <Route exact path="/basetranzit" element={<TranzitBase maps={data.tranzit[0].maps} />}> </Route>
-        <Route exact path="/recordtranzit" element={<Record records={data.tranzit[0].record} maps={data.tranzit[0].maps} />}> </Route>
-        <Route exact path="/recorddierise" element={<Record records={data.dierise[0].record} maps={data.dierise[0].maps} />}> </Route>
-        <Route exact path="/recordmobofthedead" element={<Record records={data.mobofthedead[0].record} maps={data.mobofthedead[0].maps} />}> </Route>
-        <Route exact path="/recordburied" element={<Record records={data.buried[0].record} maps={data.buried[0].maps}  />}> </Route>
-        <Route exact path="/recordorigins" element={<Record records={data.origins[0].record} maps={data.origins[0].maps} />}> </Route>
+        <Route exact path="/recordtranzit" element={<Record records={data.tranzit[0].record} maps={data.tranzit[0].maps} mapName="tranzit" />}></Route>
+        <Route exact path="/recorddierise" element={<Record records={data.dierise[0].record} maps={data.dierise[0].maps} mapName="dierise" />}></Route>
+        <Route exact path="/recordmobofthedead" element={<Record records={data.mobofthedead[0].record} maps={data.mobofthedead[0].maps} mapName="mobofthedead" />}></Route>
+        <Route exact path="/recordburied" element={<Record records={data.buried[0].record} maps={data.buried[0].maps} mapName="buried" />}></Route>
+        <Route exact path="/recordorigins" element={<Record records={data.origins[0].record} maps={data.origins[0].maps} mapName="origins" />}></Route>
         <Route exact path="/trophytranzit" element={<Trophy trophies={data.tranzit[0].trophy} />}> </Route>
         <Route exact path="/trophydierise" element={<Trophy trophies={data.dierise[0].trophy} />}> </Route>
         <Route exact path="/trophymobofthedead" element={<Trophy trophies={data.mobofthedead[0].trophy} />}> </Route>
