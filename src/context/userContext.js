@@ -5,7 +5,6 @@ import { doc, getDoc, setDoc, collection } from "firebase/firestore";
 import { db } from "../firebase-config";
 
 
-
 export const UserContext = createContext()
 
 
@@ -17,6 +16,9 @@ const UserContextProvider = (props) => {
   const [timeElapsed, setTimeElapsed] = useState({ minutes: 0, seconds: 0 });
   const [timerData, setTimerData] = useState({});
 
+
+  // Récupération des données du Timer à partir de Firebase en utilisant l'ID de l'utilisateur actuellement connecté
+  
   useEffect(() => {
     const fetchTimerData = async () => {
       const user = auth.currentUser;
@@ -47,6 +49,7 @@ const UserContextProvider = (props) => {
   
   // Utilisateur qui va se connecter
   const [currentUser, setCurrentUser] = useState();
+  
   // Le temps d'avoir une réponse de Firebase
   const [loadingData, setLoadingData] = useState(true);
 
@@ -54,10 +57,12 @@ const UserContextProvider = (props) => {
   const [modalState, setModalState] = useState({ signUpModal: false, signInModal: false })
 
   // Permet de changer l'état d'authentification
+  //  Si un utilisateur est connecté, alors ca renvoi des informations sur l'utilisateur : email, mdp etc..
+
   useEffect(() => {
 
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      // Si je suis connecté alors ca renvoi le user sinon rien
+
       setCurrentUser(currentUser);
       setLoadingData(false);
     });

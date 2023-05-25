@@ -7,8 +7,6 @@ const SignInModal = () => {
 
   const { modalState, toggleModals, signIn } = useContext(UserContext);
 
-  const { handleSignIn } = useContext(UserContext);
-
   const navigate = useNavigate();
   // Validation pour le mot de passe
   const [validation, setValidation] = useState("");
@@ -30,13 +28,13 @@ const SignInModal = () => {
       const email = inputs.current[0].value;
       const password = inputs.current[1].value;
     
-      await handleSignIn(email, password);
+      await signIn(email, password);
       
       setValidation("")
       navigate("/account/account-page")
       toggleModals("close")
 
-    } catch{
+    } catch (err) {
       setValidation("L'Email et/ou le mot de passe est incorrect")
     }
 
@@ -62,7 +60,7 @@ const SignInModal = () => {
           <input ref={addInputs} type="password" id="current-password" />
           <p className="Validation" >{validation}</p>
         </div>
-        <button type="submit" className="modalSignButton" onClick={closeModal}>Annuler</button>
+        <button type="button" className="modalSignButton" onClick={closeModal}>Annuler</button>
         <button type="submit" className="modalSignButton">Se connecter</button>
       </form>
     </div>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUpModal = () => {
 
-  const { modalState, toggleModals, signUp, handleSignUp } = useContext(UserContext);
+  const { modalState, toggleModals, handleSignUp } = useContext(UserContext);
 
   const navigate = useNavigate();
   // Validation pour le mot de passe

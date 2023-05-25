@@ -11,26 +11,17 @@ return (
 
 	<div className="Card">
 
-	<div className="CardList1">
-	<Link to="/tranzit"> <h2> TRANZIT </h2> </Link>
-  </div>
 
-	<div className="CardList2">
-	<Link to="/dierise"> 	<h2> DIE RISE </h2> </Link>
-  </div>
+	<Link to="/tranzit"> 	<div className="CardList1"> <h2> TRANZIT </h2> </div> </Link>
 
-	<div className="CardList3">
-	<Link to="/mobofthedead"> <h2> MOB OF THE DEAD </h2></Link>
-  </div>
+	<Link to="/dierise"> <div className="CardList2"> <h2> DIE RISE </h2> </div> </Link>
 
-	<div className="CardList4">
-	<Link to="/buried"> <h2> BURIED </h2> </Link>
-  </div>
+	<Link to="/mobofthedead"> <div className="CardList3"><h2> MOB OF THE DEAD </h2> </div></Link>
+  
+	<Link to="/buried"> <div className="CardList4"> <h2> BURIED </h2>  </div> </Link>
 
-	<div className="CardList5">
-	<Link to="/origins"> <h2> ORIGIN </h2> </Link>
+	<Link to="/origins">  <div className="CardList5"> <h2> ORIGIN </h2>  </div> </Link>
 
-  </div>
 
   </div>
 

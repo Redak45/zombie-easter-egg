@@ -38,25 +38,25 @@ const AccountHome = () => {
       <h2 className="AccountTitle">Temps de chaque map :</h2>
       <div className="AccountContainer">
         <div className="AccountMap">
-          Tranzit : <span>{mapTimes['tranzit'] ? formatTime(mapTimes['tranzit']) : '0'}</span>
+          Tranzit : <span>{mapTimes['tranzit'] ? formatTime(mapTimes['tranzit']) : '0 s'}</span>
           <Link to="/recordtranzit">
             <button className="buttonSeeRecord">Voir</button>
           </Link>
         </div>
         <div className="AccountMap">
-          Die rise : <span>{mapTimes['dierise'] ? formatTime(mapTimes['dierise']) : '0'}</span>
+          Die rise : <span>{mapTimes['dierise'] ? formatTime(mapTimes['dierise']) : '0 s'}</span>
           <Link to="/recorddierise">
             <button className="buttonSeeRecord">Voir</button>
           </Link>
         </div>
         <div className="AccountMap">
-          M O D :<span>{mapTimes['mobofthedead'] ? formatTime(mapTimes['mobofthedead']) : '0'}</span>
+          M O D :<span>{mapTimes['mobofthedead'] ? formatTime(mapTimes['mobofthedead']) : '0 s'}</span>
           <Link to="/recordmobofthedead">
             <button className="buttonSeeRecord">Voir</button>
           </Link>
         </div>
         <div className="AccountMap">
-          Buried : <span>{mapTimes['buried'] ? formatTime(mapTimes['buried']) : '0'}</span>
+          Buried : <span>{mapTimes['buried'] ? formatTime(mapTimes['buried']) : '0 s'}</span>
           <Link to="/recordburied">
             <button className="buttonSeeRecord">Voir</button>
           </Link>
