@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase-config"
-import { doc, updateDoc, getDoc, setDoc, collection } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection } from "firebase/firestore";
 import { db } from "../firebase-config";
 
 
@@ -15,11 +15,6 @@ const UserContextProvider = (props) => {
   const signIn = (email, pwd) => signInWithEmailAndPassword(auth, email, pwd)
 
   const [timeElapsed, setTimeElapsed] = useState({ minutes: 0, seconds: 0 });
-  const [timeElapsedTranzit, setTimeElapsedTranzit] = useState({ minutes: 0, seconds: 0 });
-  const [timeElapsedDieRise, setTimeElapsedDieRise] = useState({ minutes: 0, seconds: 0 });
-  const [timeElapsedMod, setTimeElapsedMod] = useState({ minutes: 0, seconds: 0 });
-  const [timeElapsedBuried, setTimeElapsedBuried] = useState({ minutes: 0, seconds: 0 });
-  const [timeElapsedOrigins, setTimeElapsedOrigins] = useState({ minutes: 0, seconds: 0 });
   const [timerData, setTimerData] = useState({});
 
   useEffect(() => {
@@ -41,7 +36,6 @@ const UserContextProvider = (props) => {
   }, []);
 
   
-
 
   const [mapTimes, setMapTimes] = useState({
     tranzit: { minutes: 0, seconds: 0 },
@@ -131,7 +125,6 @@ const UserContextProvider = (props) => {
   };
   
   
-  
 
   const handleSignIn = async (email, password) => {
     try {
@@ -177,7 +170,7 @@ const handleSignUp = async (email, password) => {
 
   return (
 
-    <UserContext.Provider value={{ modalState, toggleModals, signUp, signIn, currentUser, loadingData, timeElapsed, setTimeElapsed, handleValidation, mapTimes, setMapTimes, handleSignIn, handleSignUp
+    <UserContext.Provider value={{ modalState, toggleModals, signUp, signIn, currentUser, loadingData, timeElapsed, setTimeElapsed, handleValidation, mapTimes, setMapTimes, handleSignIn, handleSignUp,
      }}>
 
       {!loadingData && props.children}

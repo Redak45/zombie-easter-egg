@@ -10,6 +10,7 @@ const Record = ({ records, maps, mapName }) => {
   const { timeElapsed, setTimeElapsed, mapTimes, setMapTimes } = useContext(UserContext);
   const [timerActive, setTimerActive] = useState(false);
 
+  const [isTimeValidated, setIsTimeValidated] = useState(false);
 
   const { handleValidation } = useContext(UserContext)
 
@@ -17,7 +18,8 @@ const Record = ({ records, maps, mapName }) => {
   const handleClick = () => {
     if (mapTimes.hasOwnProperty(mapName)) {
       handleValidation(mapName, timeElapsed);
-      handleResetTimer(); 
+      setIsTimeValidated(true);
+      handleResetTimer();
     }
   };
 
@@ -50,6 +52,9 @@ const Record = ({ records, maps, mapName }) => {
     setTimerActive(false);
   };
 
+  const handleResetValidation = () => {
+    setIsTimeValidated(false);
+  };
 
 
   return (
@@ -66,11 +71,11 @@ const Record = ({ records, maps, mapName }) => {
 
 
       <div className="timerButton">
-        <button className="timerButton2" onClick={handleResetTimer}>
+        <button className="timerButton2" onClick={() => {handleResetTimer(); handleResetValidation() }}>
           Réinitialiser
       </button>
         {!timerActive ? (
-          <button className="timerButton1" onClick={handleStartTimer}>
+          <button className="timerButton1" onClick={() => {handleStartTimer(); handleResetValidation() }}>
             Démarrer
         </button>
         ) : (
@@ -86,17 +91,17 @@ const Record = ({ records, maps, mapName }) => {
         )}
         {!timerActive && (timeElapsed.minutes > 0 || timeElapsed.seconds > 0) && (
           <div className="timer">
-            <span> {' '}
+            <span>
               {timeElapsed.minutes < 10 ? `0${timeElapsed.minutes}` : timeElapsed.minutes} :{' '}
               {timeElapsed.seconds < 10 ? `0${timeElapsed.seconds}` : timeElapsed.seconds}
             </span>
-            <button className="timerButton3" onClick={() => handleClick()}>
+            <button className="timerButton3" onClick={handleClick}>
               Valider votre temps
-          </button>
+            </button>
+
           </div>
-
         )}
-
+        {isTimeValidated && <p className="validatedText"> Votre temps est valide</p>}
       </div>
 
 

@@ -54,6 +54,19 @@
     margin: auto;
 }
 
+.validatedText {
+    padding: 20px; 
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    color: #C59535;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: solid 4px#C59535;
+  }
+
 .record{
     margin: 20px 0px;
     border-top : solid 4px #C59535;
