@@ -65,9 +65,8 @@ const Record = ({ records, maps, mapName }) => {
       </div>
 
       <div className="trophydescription">
-        <p> Vous trouverez ci-dessous le top 7 des joueurs les plus rapides à réaliser le speedrun sur <span> TRANZIT </span> </p>
+        <p> Vous trouverez ci-dessous le top 7 des joueurs les plus rapides à réaliser le speedrun sur <span> {maps} </span> </p>
       </div>
-
 
 
       <div className="timerButton">

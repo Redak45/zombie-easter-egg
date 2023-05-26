@@ -4,7 +4,7 @@ import iconTrophy from '../icons/trophy.png';
 
 
 
-const TranzitTrophy = ({trophies}) => {
+const TranzitTrophy = ({trophies, maps}) => {
   
   // Stocke le type de trophée sélectionné 
   const [filter, setFilter] = useState(null);
@@ -25,11 +25,11 @@ return (
     <div className="ContainerTrophy">
     
     <div className="banner bannerTranzit">
-      <h2> TRANZIT : TROPHEES</h2> 
+      <h2> {maps} : TROPHEES</h2> 
     </div>
 
     <div className="trophydescription">
-      <p> Vous trouverez ci-dessous l’intégralité des trophées de <span> TRANZIT </span> classé par types de trophées </p> 
+      <p> Vous trouverez ci-dessous l’intégralité des trophées de <span> {maps} </span> classé par types de trophées </p> 
     </div>
 
     <div className="filterbuttons">

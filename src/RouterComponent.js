@@ -130,11 +130,11 @@ function RouterComponents() {
         <Route exact path="/recordburied" element={<Record {...buriedProps2} />}></Route>
         <Route exact path="/recordorigins" element={<Record {...originsProps2} />}></Route>
 
-        <Route exact path="/trophytranzit" element={<Trophy trophies={data.tranzit[0].trophy} />}> </Route>
-        <Route exact path="/trophydierise" element={<Trophy trophies={data.dierise[0].trophy} />}> </Route>
-        <Route exact path="/trophymobofthedead" element={<Trophy trophies={data.mobofthedead[0].trophy} />}> </Route>
-        <Route exact path="/trophyburied" element={<Trophy trophies={data.buried[0].trophy} />}> </Route>
-        <Route exact path="/trophyorigins" element={<Trophy trophies={data.origins[0].trophy} />}> </Route>
+        <Route exact path="/trophytranzit" element={<Trophy trophies={data.tranzit[0].trophy} maps={data.tranzit[0].maps} />}> </Route>
+        <Route exact path="/trophydierise" element={<Trophy trophies={data.dierise[0].trophy} maps={data.dierise[0].maps} />}> </Route>
+        <Route exact path="/trophymobofthedead" element={<Trophy trophies={data.mobofthedead[0].trophy} maps={data.mobofthedead[0].maps} />}> </Route>
+        <Route exact path="/trophyburied" element={<Trophy trophies={data.buried[0].trophy} maps={data.buried[0].maps} />}> </Route>
+        <Route exact path="/trophyorigins" element={<Trophy trophies={data.origins[0].trophy} maps={data.origins[0].maps} />}> </Route>
       </Routes>
   );
 }
